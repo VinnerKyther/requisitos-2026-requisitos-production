@@ -1,4 +1,4 @@
-Aqui está o seu Documento de Visão estruturado exatamente no padrão Markdown do GitHub exigido pelo seu professor, mas com o conteúdo totalmente voltado para o projeto **GAC (Gestão de Ativos do CCT)** da Unifor, englobando o controle de projetores, chaves e acessórios:
+ **GAC (Gestão de Ativos do CCT)** da Unifor, englobando o controle de projetores, chaves e acessórios:
 
 ***
 
