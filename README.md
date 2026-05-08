@@ -31,6 +31,7 @@ Especificar um sistema para criar uma plataforma digital integrada a identificad
 *   **Requisitos/Backlog.md**: Backlog priorizado contendo as funcionalidades mapeadas.
 *   **Modelagem/Diagramas-UML.md**: Representações da estrutura e comportamento do sistema, contendo os diagramas de Casos de Uso, Classes e Sequência.
 
+<!-- 
 #### Contexto Funcional
 O sistema proposto atende aos Professores, Coordenação, Direção e Atendentes do CCT, buscando substituir os controles manuais com foco em:
 *   retirada ágil de equipamentos via mobile (identificação por NFC/QR Code e aceite digital do termo de responsabilidade);
@@ -39,6 +40,7 @@ O sistema proposto atende aos Professores, Coordenação, Direção e Atendentes
 *   visibilidade em tempo real, gestão e auditoria centralizada com histórico de uso;
 *   alertas e notificações automáticas de prazos;
 *   geração de relatórios analíticos.
+-->
 
 #### Histórico
 Projeto da disciplina de Requisitos e Modelagem de Sistemas - Unifor.
