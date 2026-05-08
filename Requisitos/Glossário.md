@@ -5,7 +5,7 @@
 #### Histórico de Versões
 | Data | Versão | Descrição | Autor |
 | ------ | ------ | ------ | ------ |
-| 07/05/2026 | 1.0 | Criação do glossário com os termos iniciais do projeto GAC | [Seu Nome/Seu Grupo] |
+| 07/05/2026 | 1.0 | Criação do glossário com os termos iniciais do projeto GAC | [Requisitos Production] |
 
 #### 1. Objetivo
 Este documento visa padronizar o vocabulário utilizado no projeto **GAC (Gestão de Ativos do CCT)**. Ele serve como referência para desenvolvedores, analistas, alunos, professores e a coordenação, evitando ambiguidades no entendimento dos requisitos e regras de negócio.
