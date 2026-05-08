@@ -28,4 +28,4 @@ Este documento visa padronizar o vocabulário utilizado no projeto **GAC (Gestã
 
 ***
 
-**Dica de uso no GitHub:** Quando você salvar esse arquivo no GitHub, a tabela será renderizada de forma bem organizada, facilitando muito a leitura da banca e do seu professor. Se o seu grupo lembrar de alguma outra palavra específica da vivência na Unifor durante o projeto, basta adicionar uma nova linha na tabela!
+
