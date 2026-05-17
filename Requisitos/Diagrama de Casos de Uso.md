@@ -1,10 +1,13 @@
+### 2. Diagrama de Casos de Uso (UML)
+
+```mermaid
 flowchart LR
     %% Definindo os Atores
     Professor(["👨‍🏫 Professor"])
     Atendente(["💁 Atendente"])
     Administrador(["⚙️ Administrador"])
 
-    %% Definindo os limites do sistema (Plataforma GAC)
+    %% Definindo os limites do sistema
     subgraph Sistema [Plataforma GAC - Gestão de Ativos]
         direction TB
         UC1([Consultar Disponibilidade])
@@ -24,9 +27,9 @@ flowchart LR
     Administrador --- UC7
     Administrador --- UC8
 
-    %% Relacionamentos Include (Obrigatório) - Seta vai do base para o incluído
-    UC2 -. "«include»" .-> UC3
-    UC4 -. "«include»" .-> UC5
+    %% Relacionamentos Include (Obrigatório)
+    UC2 -.->|«include»| UC3
+    UC4 -.->|«include»| UC5
 
-    %% Relacionamento Extend (Opcional) - Seta vai do opcional para o base
-    UC6 -. "«extend»" .-> UC4
+    %% Relacionamento Extend (Opcional)
+    UC6 -.->|«extend»| UC4
