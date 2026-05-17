@@ -1,46 +1,35 @@
-### Diagrama de Casos de Uso (MCU) - Sistema GAC
-
-#### 1. Objetivo
-Apresentar a modelagem funcional do sistema GAC sob a perspectiva do usuário, mapeando os atores, suas ações e os relacionamentos obrigatórios (`<<include>>`) e opcionais (`<<extend>>`).
-
-#### 2. Diagrama Visual (UML)
+### 2. Diagrama Visual (UML)
 
 ```mermaid
 flowchart LR
-    %% Definição dos Atores (Bonecos)
-    Prof(("🧑‍🏫 Professor\n(Ator)"))
-    Atend(("👨‍💼 Atendente\n(Ator)"))
-    Admin(("⚙️ Administrador\n(Ator)"))
+    %% Definindo os Atores
+    Professor(["👨‍🏫 Professor"])
+    Atendente(["💁 Atendente"])
+    Administrador(["⚙️ Administrador"])
 
-    %% Fronteira do Sistema GAC
-    subgraph Sistema GAC [Plataforma GAC - Gestão de Ativos]
+    %% Definindo os limites do sistema (Plataforma GAC)
+    subgraph Sistema [Plataforma GAC - Gestão de Ativos]
         direction TB
         UC1([Consultar Disponibilidade])
         UC2([Retirar Equipamento via QR/NFC])
         UC3([Assinar Termo Digital])
-        
         UC4([Registrar Devolução])
         UC5([Preencher Checklist Técnico])
-        UC5_1([Registrar Avaria / Defeito])
-        
-        UC6([Cadastrar Novo Equipamento])
-        UC7([Gerar Relatórios Gerenciais])
+        UC6([Registrar Avaria / Defeito])
+        UC7([Cadastrar Novo Equipamento])
+        UC8([Gerar Relatórios Gerenciais])
     end
 
-    %% Relacionamentos do Professor
-    Prof ===> UC1
-    Prof ===> UC2
-    %% Include: Assinar o termo é OBRIGATÓRIO para retirar
+    %% Conectando Atores aos Casos de Uso principais
+    Professor --- UC1
+    Professor --- UC2
+    Atendente --- UC4
+    Administrador --- UC7
+    Administrador --- UC8
+
+    %% Relacionamentos Include (Obrigatório) - Seta vai do base para o incluído
     UC2 -. "<<include>>" .-> UC3
-
-    %% Relacionamentos do Atendente
-    Atend ===> UC1
-    Atend ===> UC4
-    %% Include: Preencher o checklist é OBRIGATÓRIO na devolução
     UC4 -. "<<include>>" .-> UC5
-    %% Extend: Registrar avaria é OPCIONAL (só se estiver quebrado)
-    UC5_1 -. "<<extend>>" .-> UC5
 
-    %% Relacionamentos do Administrador
-    Admin ===> UC6
-    Admin ===> UC7
+    %% Relacionamento Extend (Opcional) - Seta vai do opcional para o base
+    UC6 -. "<<extend>>" .-> UC4
