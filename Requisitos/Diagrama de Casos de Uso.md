@@ -1,6 +1,3 @@
-### 2. Diagrama Visual (UML)
-
-```mermaid
 flowchart LR
     %% Definindo os Atores
     Professor(["👨‍🏫 Professor"])
@@ -28,8 +25,8 @@ flowchart LR
     Administrador --- UC8
 
     %% Relacionamentos Include (Obrigatório) - Seta vai do base para o incluído
-    UC2 -. "<<include>>" .-> UC3
-    UC4 -. "<<include>>" .-> UC5
+    UC2 -. "«include»" .-> UC3
+    UC4 -. "«include»" .-> UC5
 
     %% Relacionamento Extend (Opcional) - Seta vai do opcional para o base
-    UC6 -. "<<extend>>" .-> UC4
+    UC6 -. "«extend»" .-> UC4
