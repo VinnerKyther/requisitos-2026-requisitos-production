@@ -3,7 +3,7 @@
 #### Histórico de Versões
 | Data | Versão | Descrição | Autor |
 | ------ | ------ | ------ | ------ |
-| 16/05/2026 | 1.0 | Criação da especificação textual de Casos de Uso | [Seu Nome/Grupo] |
+| 16/05/2026 | 1.0 | Criação da especificação textual de Casos de Uso | [RequisitosProductions] |
 
 #### 1. Atores do Sistema
 Os atores são os perfis de usuários que interagem diretamente com o sistema para realizar alguma ação:
