@@ -3,7 +3,7 @@
 #### Histórico de Versões
 | Data | Versão | Descrição | Autor |
 | ------ | ------ | ------ | ------ |
-| 07/05/2026 | 1.0 | Criação dos Requisitos Não Funcionais do GAC | [] |
+| 07/05/2026 | 1.0 | Criação dos Requisitos Não Funcionais do GAC | [RequisitosProductions] |
 
 #### 1. Objetivo
 Este documento descreve os Requisitos Não Funcionais (RNF) do sistema GAC, definindo as restrições, premissas de qualidade, desempenho, segurança e usabilidade necessárias para a plataforma digital no contexto do CCT da Unifor.
