@@ -3,7 +3,7 @@
 
 ## 1. Documento de Visão
 ### O Problema Atual
-Atualmente no Centro de Ciências e Tecnologia (CCT) da Unifor, o controle de empréstimo de projetores e chaves pode envolver registros manuais, comunicação informal e uma conferência operacional pouco padronizada [3]. Como consequência, ocorrem dificuldades para identificar quem está com um determinado item, quando ele foi retirado, quando deveria ser devolvido e em que estado físico o equipamento foi entregue.
+Atualmente no Centro de Ciências e Tecnologia (CCT) da Unifor, o controle de empréstimo de projetores e chaves pode envolver registros manuais, comunicação informal e uma conferência operacional pouco padronizada. Como consequência, ocorrem dificuldades para identificar quem está com um determinado item, quando ele foi retirado, quando deveria ser devolvido e em que estado físico o equipamento foi entregue.
 
 ### A Solução Proposta
 A solução GAC busca substituir os controles manuais e dispersos por uma plataforma digital integrada a identificadores físicos (preferencialmente utilizando NFC e/ou QR Code) para apoiar todo o ciclo de vida dos ativos. Isso trará maior rastreabilidade em tempo real do inventário e das movimentações de empréstimo e devolução.
