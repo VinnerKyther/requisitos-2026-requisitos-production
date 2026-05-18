@@ -7,7 +7,7 @@
 #### Histórico de Versões
 | Data | Versão | Descrição | Autor |
 | ------ | ------ | ------ | ------ |
-| 07/05/2026 | 1.0 | Criação do documento de visão para o GAC | Alunos do Projeto de Extensão |
+| 07/05/2026 | 1.0 | Criação do documento de visão para o GAC | RequisitosProductions |
 
 #### 1. Objetivo
 Especificar e definir o escopo do sistema GAC (Gestão de Ativos do CCT), criando uma plataforma digital integrada a identificadores físicos (NFC e/ou QR Code) para apoiar o ciclo de vida dos ativos da Unifor.
