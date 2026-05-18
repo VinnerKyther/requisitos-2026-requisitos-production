@@ -3,7 +3,7 @@
 #### Histórico de Versões
 | Data | Versão | Descrição | Autor |
 | ------ | ------ | ------ | ------ |
-| 07/05/2026 | 1.0 | Criação das Regras de Negócio do GAC | [] |
+| 07/05/2026 | 1.0 | Criação das Regras de Negócio do GAC | [RequisitosProductions] |
 
 #### 1. Objetivo
 Este documento lista as Regras de Negócio (RN) do sistema GAC. Elas representam as políticas, normas e condições restritivas da Unifor/CCT que o sistema deve obrigatoriamente respeitar e aplicar durante o fluxo de empréstimo e devolução de ativos.
