@@ -13,7 +13,7 @@ flowchart LR
         UC1([Consultar Disponibilidade])
         UC1a([Solicitar Alerta])
         
-        %% Bloco de Ações e Inclusões separadas para evitar sobreposição
+        %% Bloco de Ações e Inclusões separadas
         UC2([Reservar Equipamento])
         UC6([Informar Sala de Destino])
         
@@ -40,19 +40,24 @@ flowchart LR
     Admin(["⚙️ Administrador (CCT)"])
     Sis(["🤖 Sistema (Automático)"])
 
-    %% Conectando os Atores
+    %% Conectando os Atores (LINHAS SÓLIDAS)
     Prof --- UC1
     Prof --- UC2
     Prof --- UC3
     Prof --- UC4
+    
+    %% O Atendente agora tem ligação VISUAL com todas as suas tarefas
+    Atend --- UC1
     Atend --- UC7
+    Atend --- UC8
+    Atend --- UC9
     
     UC10 --- Admin
     UC11 --- Admin
     UC12 --- Admin
     UC13 --- Sis
 
-    %% LIGAÇÕES (Reordenadas para limpar o visual)
+    %% LIGAÇÕES SISTÊMICAS (Setas Pontilhadas)
     UC1a -.->|«extend»| UC1
     
     UC2 -.->|«include»| UC6
