@@ -1,5 +1,6 @@
 ### Diagrama de Casos de Uso (UML) - Visão Detalhada
 
+```mermaid
 flowchart LR
     %% Atores
     Prof(["👨‍🏫 Professor"])
@@ -68,5 +69,4 @@ flowchart LR
     UC7 -.->|«include»| UC8
     UC9 -.->|«extend»| UC7
     UC11 -.->|«extend»| UC9
-
-### 
+```
