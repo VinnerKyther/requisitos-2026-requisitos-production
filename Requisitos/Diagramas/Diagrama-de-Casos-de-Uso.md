@@ -54,10 +54,4 @@ flowchart LR
     UC7 -.->|«extend»| UC5
     UC9 -.->|«extend»| UC7
 
-### O que mudou e como explicar isso para o professor:
-
-Se o seu professor perguntar sobre as novidades do diagrama, você pode justificar usando os próprios tópicos da visão do projeto de vocês:
-
-*   **A Inclusão da Reserva:** Antes da **"Retirada Ágil"** [2], o professor agora tem o Caso de Uso `Reservar Equipamento`. Note que coloquei uma seta pontilhada `«include»` apontando para `Consultar Disponibilidade`. *Explicação:* O sistema obriga o professor a checar se o projetor está livre antes de deixar ele confirmar a reserva.
-*   **O Caminho da Manutenção:** Nas regras de negócio, o CCT precisa de **"agendamento de manutenções preventivas"** [2]. O Administrador agora tem acesso direto a isso. Além disso, coloquei um `«extend»` da *Avaria* para a *Manutenção*. *Explicação:* Se o atendente registrar que o projetor voltou com a lente quebrada na devolução, o sistema abre a opção de já mandar esse equipamento direto para a manutenção.
-*   **O Ator "Sistema Automático":** Adicionei o robozinho para representar os **"Alertas e Notificações Automáticas"** [1]. *Explicação:* Não é uma pessoa que fica mandando mensagem de cobrança; é o próprio sistema que roda em segundo plano e dispara os avisos de atraso para os professores e para o painel do CCT.
+### 
