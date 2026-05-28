@@ -58,7 +58,7 @@ As macrofuncionalidades do sistema baseiam-se no ciclo de vida dos ativos:
 | **RF09** | O sistema deve disparar notificações automáticas de lembrete de devolução e alertas de atraso para os professores e para o painel da administração. |
 | **RF10** | O painel Web deve permitir ao administrador cadastrar novos itens (gerando códigos únicos) e agendar manutenções corretivas/preventivas. |
 | **RF11** | O sistema deve gerar relatórios analíticos de histórico de uso, rastreabilidade (quem usou, quando e onde) e índice de defeitos. |
-2. Substitua a tabela na sua Revisao-Consistencia.md:
+
 ## Matriz de Rastreabilidade
 
 | ID Requisito (SRS) | Descrição do Requisito | Caso de Uso Correspondente (UML) | Status de Alinhamento |
