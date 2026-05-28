@@ -1,57 +1,72 @@
 ### Diagrama de Casos de Uso (UML) - Visão Detalhada
 
-```mermaid
 flowchart LR
-    %% Definindo os Atores
+    %% Atores
     Prof(["👨‍🏫 Professor"])
     Atend(["💁 Atendente"])
     Admin(["⚙️ Administrador"])
     Sis(["🤖 Sistema (Automático)"])
 
-    %% Definindo os limites do sistema (Plataforma GAC)
+    %% Sistema (GAC)
     subgraph Sistema [Plataforma GAC - Ciclo de Vida Digital]
         direction TB
         
-        %% Casos de Uso do Professor
+        %% Ações de Consulta e Alerta
         UC1([Consultar Disponibilidade])
+        UC1a([Solicitar Alerta de Disponibilidade])
+        
+        %% Ações de Uso do Equipamento
         UC2([Reservar Equipamento])
-        UC3([Coletar/Retirar via QR/NFC])
-        UC4([Assinar Termo Digital])
+        UC3([Retirar via QR/NFC])
+        UC4([Transferir Equipamento entre Professores])
         
-        %% Casos de Uso do Atendente
-        UC5([Registrar Devolução])
-        UC6([Preencher Checklist Técnico])
-        UC7([Registrar Avaria / Defeito])
+        %% Ações de Segurança e Rastreabilidade
+        UC5([Assinar Termo Digital])
+        UC6([Informar Sala de Destino])
         
-        %% Casos de Uso do Administrador
-        UC8([Cadastrar Novo Equipamento])
-        UC9([Agendar Manutenção])
-        UC10([Gerar Relatórios e Auditoria])
+        %% Ações do Atendente
+        UC7([Registrar Devolução])
+        UC8([Preencher Checklist Técnico])
+        UC9([Registrar Avaria / Defeito])
         
-        %% Casos de Uso Automáticos
-        UC11([Disparar Alertas de Atraso])
+        %% Ações da Gestão
+        UC10([Cadastrar Novo Equipamento])
+        UC11([Agendar Manutenção])
+        UC12([Gerar Relatórios e Auditoria])
+        
+        %% Ações do Sistema
+        UC13([Disparar Alertas Automáticos])
     end
 
-    %% Conectando Atores aos Casos de Uso
+    %% Conectando os Atores
     Prof --- UC1
     Prof --- UC2
     Prof --- UC3
+    Prof --- UC4
     
-    Atend --- UC5
+    Atend --- UC7
     
-    Admin --- UC8
-    Admin --- UC9
     Admin --- UC10
+    Admin --- UC11
+    Admin --- UC12
     
-    Sis --- UC11
+    Sis --- UC13
 
-    %% Relacionamentos Include (Obrigatório)
-    UC2 -.->|«include»| UC1
-    UC3 -.->|«include»| UC4
-    UC5 -.->|«include»| UC6
+    %% Regras de Sem Disponibilidade (Opcional)
+    UC1a -.->|«extend»| UC1
 
-    %% Relacionamentos Extend (Opcional)
-    UC7 -.->|«extend»| UC5
+    %% Regras de Sala de Destino (Obrigatório)
+    UC2 -.->|«include»| UC6
+    UC3 -.->|«include»| UC6
+    UC4 -.->|«include»| UC6
+
+    %% Regras de Termo Digital (Obrigatório)
+    UC3 -.->|«include»| UC5
+    UC4 -.->|«include»| UC5
+
+    %% Regras de Devolução
+    UC7 -.->|«include»| UC8
     UC9 -.->|«extend»| UC7
+    UC11 -.->|«extend»| UC9
 
 ### 
