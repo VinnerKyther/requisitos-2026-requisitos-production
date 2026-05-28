@@ -74,11 +74,6 @@ As macrofuncionalidades do sistema baseiam-se no ciclo de vida dos ativos:
 | **RF09** | Alertas e notificações automáticas | `UC13 (Disparar Alertas Automáticos)` e `UC1a (Solicitar Alerta)` | ✅ Consistente |
 | **RF10** | Cadastrar itens e agendar manutenções | `UC10 (Cadastrar Novo Equipamento)` e `UC11 (Agendar Manutenção)` | ✅ Consistente |
 | **RF11** | Relatórios analíticos e rastreabilidade | `UC12 (Gerar Relatórios e Auditoria)` | ✅ Consistente |
-Como você pode usar isso a seu favor na apresentação final: Se o professor da banca perguntar qual foi o valor de fazer essa Revisão de Consistência, você pode contar essa história real! "Professor, a revisão foi fundamental. Quando cruzamos o diagrama UML com o documento SRS, percebemos que o Caso de Uso de Devolução (UC7) não tinha um Requisito Funcional escrito correspondente. Graças a essa análise (a Matriz de Rastreabilidade), nós corrigimos a inconsistência e adicionamos o RF06 antes de iniciar a prototipação."
-Com isso, não há mais nenhum traço "vazio" ou erro na sua documentação! Podemos avançar para as dicas das telas do Protótipo (Wireframes)?
-Quais telas exatas devo desenhar no protótipo do Figma?
-Como apresentar a matriz de rastreabilidade para o professor?
-Pode explicar melhor a diferença entre Wireframe e Protótipo?
 
 ### 3.2 Requisitos Não Funcionais (RNF)
 
