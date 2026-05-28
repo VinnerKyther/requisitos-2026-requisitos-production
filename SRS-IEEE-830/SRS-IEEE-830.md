@@ -43,8 +43,6 @@ As macrofuncionalidades do sistema baseiam-se no ciclo de vida dos ativos:
 
 ---
 
-## 3. Requisitos Detalhados
-
 ### 3.1 Requisitos Funcionais (RF)
 
 | ID | Descrição do Requisito Funcional |
@@ -54,11 +52,33 @@ As macrofuncionalidades do sistema baseiam-se no ciclo de vida dos ativos:
 | **RF03** | O sistema deve exigir e registrar o aceite digital (assinatura) do professor no termo de responsabilidade no momento da retirada ou transferência. |
 | **RF04** | O sistema deve exigir que o professor informe a "Sala de Destino" onde o ativo será utilizado durante as ações de reserva, retirada ou transferência. |
 | **RF05** | O sistema deve permitir a "Transferência Direta" (repasse) de um equipamento entre dois professores, atualizando a responsabilidade no banco de dados. |
-| **RF06** | O sistema deve fornecer uma tela de "Checklist Técnico" (cabos, lente, controle) que o atendente deve preencher obrigatoriamente durante a devolução. |
-| **RF07** | O sistema deve permitir que o atendente registre avarias (com fotos ou descrições) no momento do recebimento. |
-| **RF08** | O sistema deve disparar notificações automáticas de lembrete de devolução e alertas de atraso para os professores e para o painel da administração. |
-| **RF09** | O painel Web deve permitir ao administrador cadastrar novos itens (gerando códigos únicos) e agendar manutenções corretivas/preventivas. |
-| **RF10** | O sistema deve gerar relatórios analíticos de histórico de uso, rastreabilidade (quem usou, quando e onde) e índice de defeitos. |
+| **RF06** | O sistema deve permitir que o atendente registre a devolução do equipamento no balcão, dando baixa na responsabilidade do professor. |
+| **RF07** | O sistema deve fornecer uma tela de "Checklist Técnico" (cabos, lente, controle) que o atendente deve preencher obrigatoriamente durante a devolução. |
+| **RF08** | O sistema deve permitir que o atendente registre avarias (com fotos ou descrições) no momento do recebimento. |
+| **RF09** | O sistema deve disparar notificações automáticas de lembrete de devolução e alertas de atraso para os professores e para o painel da administração. |
+| **RF10** | O painel Web deve permitir ao administrador cadastrar novos itens (gerando códigos únicos) e agendar manutenções corretivas/preventivas. |
+| **RF11** | O sistema deve gerar relatórios analíticos de histórico de uso, rastreabilidade (quem usou, quando e onde) e índice de defeitos. |
+2. Substitua a tabela na sua Revisao-Consistencia.md:
+## Matriz de Rastreabilidade
+
+| ID Requisito (SRS) | Descrição do Requisito | Caso de Uso Correspondente (UML) | Status de Alinhamento |
+| :--- | :--- | :--- | :--- |
+| **RF01** | Consultar disponibilidade em tempo real | `UC1 (Consultar Disponibilidade)` | ✅ Consistente |
+| **RF02** | Retirada via etiqueta NFC ou QR Code | `UC3 (Retirar via QR/NFC)` | ✅ Consistente |
+| **RF03** | Assinatura de termo de responsabilidade | `UC5 (Assinar Termo Digital)` | ✅ Consistente |
+| **RF04** | Informar a "Sala de Destino" | `UC6 (Informar Sala de Destino)` | ✅ Consistente |
+| **RF05** | Transferência Direta entre professores | `UC4 (Transferir Equipamento)` | ✅ Consistente |
+| **RF06** | Registrar devolução e dar baixa | `UC7 (Registrar Devolução)` | ✅ Consistente |
+| **RF07** | Checklist Técnico obrigatório na devolução | `UC8 (Preencher Checklist Técnico)` | ✅ Consistente |
+| **RF08** | Registro de avarias com fotos/descrições | `UC9 (Registrar Avaria / Defeito)` | ✅ Consistente |
+| **RF09** | Alertas e notificações automáticas | `UC13 (Disparar Alertas Automáticos)` e `UC1a (Solicitar Alerta)` | ✅ Consistente |
+| **RF10** | Cadastrar itens e agendar manutenções | `UC10 (Cadastrar Novo Equipamento)` e `UC11 (Agendar Manutenção)` | ✅ Consistente |
+| **RF11** | Relatórios analíticos e rastreabilidade | `UC12 (Gerar Relatórios e Auditoria)` | ✅ Consistente |
+Como você pode usar isso a seu favor na apresentação final: Se o professor da banca perguntar qual foi o valor de fazer essa Revisão de Consistência, você pode contar essa história real! "Professor, a revisão foi fundamental. Quando cruzamos o diagrama UML com o documento SRS, percebemos que o Caso de Uso de Devolução (UC7) não tinha um Requisito Funcional escrito correspondente. Graças a essa análise (a Matriz de Rastreabilidade), nós corrigimos a inconsistência e adicionamos o RF06 antes de iniciar a prototipação."
+Com isso, não há mais nenhum traço "vazio" ou erro na sua documentação! Podemos avançar para as dicas das telas do Protótipo (Wireframes)?
+Quais telas exatas devo desenhar no protótipo do Figma?
+Como apresentar a matriz de rastreabilidade para o professor?
+Pode explicar melhor a diferença entre Wireframe e Protótipo?
 
 ### 3.2 Requisitos Não Funcionais (RNF)
 
