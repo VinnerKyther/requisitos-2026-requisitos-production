@@ -3,8 +3,8 @@
 ```mermaid
 flowchart LR
     %% Atores da Interface Mobile (Esquerda)
-    Prof(["👨‍🏫 Professor"])
-    Atend(["💁 Atendente"])
+    Prof(["👨‍🏫 Professor (Ator)"])
+    Atend(["💁 Atendente (Ator)"])
 
     subgraph Sistema [Plataforma GAC - Ciclo de Vida Digital]
         direction TB
@@ -37,7 +37,7 @@ flowchart LR
     end
 
     %% Atores da Interface Web e Robôs (Direita)
-    Admin(["⚙️ Administrador (CCT)"])
+    Admin(["⚙️ Administrador (Ator)"])
     Sis(["🤖 Sistema (Automático)"])
 
     %% Conectando os Atores (LINHAS SÓLIDAS)
