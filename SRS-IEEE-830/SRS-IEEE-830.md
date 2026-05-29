@@ -59,22 +59,6 @@ As macrofuncionalidades do sistema baseiam-se no ciclo de vida dos ativos:
 | **RF10** | O painel Web deve permitir ao administrador cadastrar novos itens (gerando códigos únicos) e agendar manutenções corretivas/preventivas. |
 | **RF11** | O sistema deve gerar relatórios analíticos de histórico de uso, rastreabilidade (quem usou, quando e onde) e índice de defeitos. |
 
-## Matriz de Rastreabilidade
-
-| ID Requisito (SRS) | Descrição do Requisito | Caso de Uso Correspondente (UML) | Status de Alinhamento |
-| :--- | :--- | :--- | :--- |
-| **RF01** | Consultar disponibilidade em tempo real | `UC1 (Consultar Disponibilidade)` | ✅ Consistente |
-| **RF02** | Retirada via etiqueta NFC ou QR Code | `UC3 (Retirar via QR/NFC)` | ✅ Consistente |
-| **RF03** | Assinatura de termo de responsabilidade | `UC5 (Assinar Termo Digital)` | ✅ Consistente |
-| **RF04** | Informar a "Sala de Destino" | `UC6 (Informar Sala de Destino)` | ✅ Consistente |
-| **RF05** | Transferência Direta entre professores | `UC4 (Transferir Equipamento)` | ✅ Consistente |
-| **RF06** | Registrar devolução e dar baixa | `UC7 (Registrar Devolução)` | ✅ Consistente |
-| **RF07** | Checklist Técnico obrigatório na devolução | `UC8 (Preencher Checklist Técnico)` | ✅ Consistente |
-| **RF08** | Registro de avarias com fotos/descrições | `UC9 (Registrar Avaria / Defeito)` | ✅ Consistente |
-| **RF09** | Alertas e notificações automáticas | `UC13 (Disparar Alertas Automáticos)` e `UC1a (Solicitar Alerta)` | ✅ Consistente |
-| **RF10** | Cadastrar itens e agendar manutenções | `UC10 (Cadastrar Novo Equipamento)` e `UC11 (Agendar Manutenção)` | ✅ Consistente |
-| **RF11** | Relatórios analíticos e rastreabilidade | `UC12 (Gerar Relatórios e Auditoria)` | ✅ Consistente |
-
 ### 3.2 Requisitos Não Funcionais (RNF)
 
 | ID | Descrição do Requisito Não Funcional | Categoria |
