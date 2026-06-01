@@ -3,7 +3,7 @@
 Este documento apresenta os protótipos de tela (wireframes) e o fluxo de navegação do aplicativo e painel web do Sistema GAC. O design "UniAtivos" foi focado em usabilidade, com modo escuro e navegação simplificada.
 
 ## 🔗 Protótipo Navegável
-**[▶️ Clique aqui para testar o Protótipo Interativo no Figma](https://record-suite-37568907.figma.site)**
+**[▶️ Clique aqui para testar o Protótipo Interativo no Figma]([https://record-suite-37568907.figma.site](https://record-suite-37568907.figma.site))**
 
 ---
 
