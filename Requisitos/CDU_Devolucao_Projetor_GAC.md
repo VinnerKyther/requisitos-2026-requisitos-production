@@ -21,18 +21,15 @@ Descreve o processo em que o atendente do CCT recebe o projetor de volta do prof
 6. O Atendente clica em "Confirmar Devolução".
 7. O Sistema desvincula o equipamento do Professor e altera o status para "Disponível".
 
-## 5. Fluxos Alternativos
-* **5.1. Busca por CPF:** No passo 2, se a tag do projetor estiver ilegível, o Atendente pode buscar o empréstimo ativo digitando o CPF do Professor.
-
-## 6. Fluxos de Exceção
+## 5. Fluxos de Exceção
 * **6.1. Avaria Identificada:** No passo 5, se o Atendente marcar que falta um cabo ou o projetor está quebrado, o sistema exige uma justificativa em texto, notifica a coordenação e altera o status do projetor para "Em Manutenção" ao invés de "Disponível".
 
-## 7. Pós-condições
+## 6. Pós-condições
 * A responsabilidade do Professor sobre o ativo é encerrada.
 * O projetor volta ao inventário e fica liberado para novas retiradas.
 
 ---
-## 8. Checklist de Validação
+## 7. Checklist de Validação
 - [x] O nome do caso de uso representa uma ação clara com verbo no infinitivo?
 - [x] O(s) ator(es) principal(is) está(ão) bem definido(s)?
 - [x] O fluxo principal descreve o caminho feliz completo de forma sequencial?
