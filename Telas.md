@@ -16,7 +16,7 @@ Telas focadas no uso rápido e prático para o momento da retirada e devolução
 
 
 ### 2.Reserva
-<img width="389" height="625" alt="Screenshot 2026-06-01 at 13 14 33" src="https://github.com/user-attachments/assets/a20ff83d-27c1-44ba-90c1-aae0304191a1" />
+<img width="389" height="625" alt="Screenshot 2026-06-01 at 13 15 19" src="https://github.com/user-attachments/assets/e36696c8-721c-46a6-91f5-6b3b70f21e4d" />
 
 
 ### 3. Leitura de QR Code / NFC
