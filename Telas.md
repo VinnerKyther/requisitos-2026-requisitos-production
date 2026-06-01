@@ -14,12 +14,15 @@ Telas focadas no uso rápido e prático para o momento da retirada e devolução
 <img width="453" height="775" alt="Screenshot 2026-06-01 at 12 37 01" src="https://github.com/user-attachments/assets/3b369f5d-fed0-4df4-be10-2c393c7e864f" />
 <img width="849" height="717" alt="Screenshot 2026-06-01 at 12 36 28" src="https://github.com/user-attachments/assets/77060b2d-7f0e-4d5d-9321-8b59b32f3c2a" />
 
+
 ### 2.Reserva
-<img width="399" height="740" alt="Screenshot 2026-06-01 at 12 56 35" src="https://github.com/user-attachments/assets/ae612b5e-1172-46df-a3e5-1b8dce1afb57" />
+<img width="389" height="625" alt="Screenshot 2026-06-01 at 13 14 33" src="https://github.com/user-attachments/assets/a20ff83d-27c1-44ba-90c1-aae0304191a1" />
+
 
 ### 3. Leitura de QR Code / NFC
 <img width="373" height="717" alt="Screenshot 2026-06-01 at 12 38 03" src="https://github.com/user-attachments/assets/cc1160f6-acdc-40d2-9f56-2104cd148ccf" />
 <img width="373" height="717" alt="Screenshot 2026-06-01 at 12 37 57" src="https://github.com/user-attachments/assets/f37f11fa-85e9-4680-8c5f-48234932c7ca" />
+
 
 ### 4. Gestão e Perfil
 <img width="388" height="717" alt="Screenshot 2026-06-01 at 12 38 24" src="https://github.com/user-attachments/assets/8f375157-eeb5-43fc-b3f1-78d67b82b97e" />
