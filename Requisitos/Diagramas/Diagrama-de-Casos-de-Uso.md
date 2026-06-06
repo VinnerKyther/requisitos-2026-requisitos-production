@@ -1,7 +1,7 @@
 ### Diagrama de Casos de Uso (UML) - Visão Detalhada
 
 ```mermaid
-flowchart LR
+fflowchart LR
     %% Atores da Esquerda
     Prof(["👨‍🏫 Professor"])
     Atend(["💁 Atendente"])
@@ -9,6 +9,9 @@ flowchart LR
     subgraph Plataforma GAC [Sistema GAC - Ciclo de Vida Digital]
         direction TB
         
+        %% Novo: Autenticação
+        UC_Login([Autenticar Usuário / Login])
+
         %% Ações Base do Professor
         UC1([Consultar Disponibilidade])
         UC1a([Solicitar Alerta])
@@ -36,7 +39,14 @@ flowchart LR
     Admin(["⚙️ Administrador"])
     Sis(["🤖 Sistema (Auto)"])
 
+    %% Herança de Atores (O Admin herda as funções do Atendente)
+    Admin -.->|«herda»| Atend
+
     %% Ligações Sólidas (Apenas Ações Principais)
+    Prof --- UC_Login
+    Atend --- UC_Login
+    Admin --- UC_Login
+
     Prof --- UC1
     Prof --- UC2
     Prof --- UC3
