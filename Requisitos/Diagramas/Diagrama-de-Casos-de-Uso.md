@@ -9,7 +9,8 @@ flowchart LR
         direction TB
         Login(["Autenticar Usuário / Login"])
         Consultar(["Consultar Disponibilidade"])
-        Alerta(["Solicitar Alerta"])
+        Alerta(["Solicitar Alerta de Retorno"])
+        SolicitarRepasse(["Solicitar Repasse a Colega"])
         Reservar(["Reservar Equipamento"])
         Retirar(["Retirar via QR/NFC"])
         Transferir(["Transferir Equipamento"])
@@ -27,9 +28,10 @@ flowchart LR
     %% Ator da Direita
     Sis(["🤖 Sistema (Auto)"])
 
-    %% Ligações Principais (usando setas para forçar os atores à esquerda)
+    %% Ligações Principais
     Prof --> Login
     Prof --> Consultar
+    Prof --> SolicitarRepasse
     Prof --> Reservar
     Prof --> Retirar
     Prof --> Transferir
@@ -43,7 +45,7 @@ flowchart LR
     Admin --> Manutencao
     Admin --> Relatorios
 
-    %% O Sistema Automático fica na direita pois a seta aponta para ele
+    %% O Sistema Automático
     AlertasAuto --> Sis
 
     %% Herança do Administrador
@@ -51,6 +53,7 @@ flowchart LR
 
     %% Relacionamentos Internos (Includes e Extends)
     Alerta -.->|extend| Consultar
+    SolicitarRepasse -.->|extend| Consultar
     
     Reservar -.->|include| Sala
     Retirar -.->|include| Sala
