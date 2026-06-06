@@ -1,3 +1,4 @@
+```mermaid
 flowchart LR
     %% Atores da Esquerda
     Prof([Professor])
@@ -61,3 +62,4 @@ flowchart LR
     Devolver -.->|include| Checklist
     Avaria -.->|extend| Devolver
     Manutencao -.->|extend| Avaria
+```
