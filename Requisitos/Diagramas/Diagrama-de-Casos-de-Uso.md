@@ -1,33 +1,33 @@
 ```mermaid
 flowchart LR
     %% Atores da Esquerda
-    Prof([Professor])
-    Atend([Atendente])
-    Admin([Administrador])
+    Prof(["👨‍🏫 Professor"])
+    Atend(["💁 Atendente"])
+    Admin(["⚙️ Administrador"])
 
-    subgraph Sistema_GAC [Sistema GAC - Ciclo de Vida Digital]
+    subgraph Plataforma_GAC ["Sistema GAC - Ciclo de Vida Digital"]
         direction TB
-        Login([Autenticar Usuário / Login])
-        Consultar([Consultar Disponibilidade])
-        Alerta([Solicitar Alerta])
-        Reservar([Reservar Equipamento])
-        Retirar([Retirar via QR/NFC])
-        Transferir([Transferir Equipamento])
-        Termo([Assinar Termo Digital])
-        Sala([Informar Sala de Destino])
-        Devolver([Registrar Devolução])
-        Checklist([Preencher Checklist Técnico])
-        Avaria([Registrar Avaria / Defeito])
-        Cadastrar([Cadastrar Novo Equipamento])
-        Manutencao([Agendar Manutenção])
-        Relatorios([Gerar Relatórios])
-        AlertasAuto([Disparar Alertas])
+        Login(["Autenticar Usuário / Login"])
+        Consultar(["Consultar Disponibilidade"])
+        Alerta(["Solicitar Alerta"])
+        Reservar(["Reservar Equipamento"])
+        Retirar(["Retirar via QR/NFC"])
+        Transferir(["Transferir Equipamento"])
+        Termo(["Assinar Termo Digital"])
+        Sala(["Informar Sala de Destino"])
+        Devolver(["Registrar Devolução"])
+        Checklist(["Preencher Checklist Técnico"])
+        Avaria(["Registrar Avaria / Defeito"])
+        Cadastrar(["Cadastrar Novo Equipamento"])
+        Manutencao(["Agendar Manutenção"])
+        Relatorios(["Gerar Relatórios e Auditoria"])
+        AlertasAuto(["Disparar Alertas Automáticos"])
     end
 
     %% Ator da Direita
-    Sis([Sistema Automático])
+    Sis(["🤖 Sistema (Auto)"])
 
-    %% Usando setas (-->) obrigamos o GitHub a manter os atores na esquerda
+    %% Ligações Principais (usando setas para forçar os atores à esquerda)
     Prof --> Login
     Prof --> Consultar
     Prof --> Reservar
@@ -43,7 +43,7 @@ flowchart LR
     Admin --> Manutencao
     Admin --> Relatorios
 
-    %% O Sistema Automático fica na direita pois o caso de uso aponta para ele
+    %% O Sistema Automático fica na direita pois a seta aponta para ele
     AlertasAuto --> Sis
 
     %% Herança do Administrador
