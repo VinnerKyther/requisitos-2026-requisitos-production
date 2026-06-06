@@ -1,60 +1,63 @@
 flowchart LR
-    %% Atores
-    Prof(["👨‍🏫 Professor"])
-    Atend(["💁 Atendente"])
-    Admin(["⚙️ Administrador"])
-    Sis(["🤖 Sistema (Auto)"])
+    %% Atores da Esquerda
+    Prof([Professor])
+    Atend([Atendente])
+    Admin([Administrador])
 
-    subgraph PlataformaGAC [Sistema GAC - Ciclo de Vida Digital]
+    subgraph Sistema_GAC [Sistema GAC - Ciclo de Vida Digital]
         direction TB
-        UC_Login([Autenticar Usuário / Login])
-        UC1([Consultar Disponibilidade])
-        UC1a([Solicitar Alerta])
-        UC2([Reservar Equipamento])
-        UC3([Retirar via QR/NFC])
-        UC4([Transferir Equipamento])
-        UC5([Assinar Termo Digital])
-        UC6([Informar Sala de Destino])
-        UC7([Registrar Devolução])
-        UC8([Preencher Checklist Técnico])
-        UC9([Registrar Avaria / Defeito])
-        UC10([Cadastrar Novo Equipamento])
-        UC11([Agendar Manutenção])
-        UC12([Gerar Relatórios e Auditoria])
-        UC13([Disparar Alertas Automáticos])
+        Login([Autenticar Usuário / Login])
+        Consultar([Consultar Disponibilidade])
+        Alerta([Solicitar Alerta])
+        Reservar([Reservar Equipamento])
+        Retirar([Retirar via QR/NFC])
+        Transferir([Transferir Equipamento])
+        Termo([Assinar Termo Digital])
+        Sala([Informar Sala de Destino])
+        Devolver([Registrar Devolução])
+        Checklist([Preencher Checklist Técnico])
+        Avaria([Registrar Avaria / Defeito])
+        Cadastrar([Cadastrar Novo Equipamento])
+        Manutencao([Agendar Manutenção])
+        Relatorios([Gerar Relatórios])
+        AlertasAuto([Disparar Alertas])
     end
 
-    %% Herança
-    Admin -.->|"<<herda>>"| Atend
+    %% Ator da Direita
+    Sis([Sistema Automático])
 
-    %% Associações Principais
-    Prof --- UC_Login
-    Atend --- UC_Login
-    Admin --- UC_Login
+    %% Usando setas (-->) obrigamos o GitHub a manter os atores na esquerda
+    Prof --> Login
+    Prof --> Consultar
+    Prof --> Reservar
+    Prof --> Retirar
+    Prof --> Transferir
+    
+    Atend --> Login
+    Atend --> Consultar
+    Atend --> Devolver
+    
+    Admin --> Login
+    Admin --> Cadastrar
+    Admin --> Manutencao
+    Admin --> Relatorios
 
-    Prof --- UC1
-    Prof --- UC2
-    Prof --- UC3
-    Prof --- UC4
-    
-    Atend --- UC1
-    Atend --- UC7
-    
-    Admin --- UC10
-    Admin --- UC11
-    Admin --- UC12
-    Sis --- UC13
+    %% O Sistema Automático fica na direita pois o caso de uso aponta para ele
+    AlertasAuto --> Sis
 
-    %% Dependências (Setas Pontilhadas)
-    UC1a -.->|"<<extend>>"| UC1
-    
-    UC2 -.->|"<<include>>"| UC6
-    UC3 -.->|"<<include>>"| UC6
-    UC4 -.->|"<<include>>"| UC6
-    
-    UC3 -.->|"<<include>>"| UC5
-    UC4 -.->|"<<include>>"| UC5
+    %% Herança do Administrador
+    Admin -.->|herda| Atend
 
-    UC7 -.->|"<<include>>"| UC8
-    UC9 -.->|"<<extend>>"| UC7
-    UC11 -.->|"<<extend>>"| UC9
+    %% Relacionamentos Internos (Includes e Extends)
+    Alerta -.->|extend| Consultar
+    
+    Reservar -.->|include| Sala
+    Retirar -.->|include| Sala
+    Transferir -.->|include| Sala
+    
+    Retirar -.->|include| Termo
+    Transferir -.->|include| Termo
+
+    Devolver -.->|include| Checklist
+    Avaria -.->|extend| Devolver
+    Manutencao -.->|extend| Avaria
