@@ -322,3 +322,24 @@
 * **P3.** O sistema aciona o módulo de envio e dispara e-mails institucionais e notificações *Push* no aplicativo.
 * **P4.** O sistema gera um log de notificação enviada.
 * **P5.** O caso de uso é encerrado.
+
+---
+
+## 16. Nome do caso de uso: Solicitar Repasse a Colega
+**Objetivo:** Permitir que um professor solicite diretamente pelo aplicativo um equipamento que está atualmente em uso por outro colega, agilizando a transferência sem intervenção do CCT.
+**Classificação:** Abstrato (Estende a Consulta de Disponibilidade)
+**Atores:** Professor (Secundário)
+
+**Pré-condições:** 
+* O caso de uso deve ter sido instanciado pela extensão da consulta de disponibilidade (quando o ator visualiza que um equipamento está em uso por outro professor).
+* O professor solicitante não pode ter pendências no CCT.
+
+**Fluxo Principal:**
+* **P1.** O sistema exibe o equipamento indisponível no CCT, mas com status "Em uso pelo Prof. [Nome] na Sala [X]".
+* **P2.** O ator clica no botão "Solicitar Repasse".
+* **P3.** O sistema exibe uma tela de confirmação perguntando se deseja enviar uma notificação ao colega.
+* **P4.** O ator confirma a solicitação.
+* **P5.** O sistema dispara uma notificação push/e-mail para o professor que está com a posse do equipamento informando: *"O colega [Nome] está solicitando o repasse do seu projetor"*.
+* **P6.** O sistema retorna ao caso de uso chamador.
+
+**Pós-condições:** O professor que possui o equipamento é notificado para, caso aceite, i
