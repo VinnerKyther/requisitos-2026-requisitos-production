@@ -342,4 +342,4 @@
 * **P5.** O sistema dispara uma notificação push/e-mail para o professor que está com a posse do equipamento informando: *"O colega [Nome] está solicitando o repasse do seu projetor"*.
 * **P6.** O sistema retorna ao caso de uso chamador.
 
-**Pós-condições:** O professor que possui o equipamento é notificado para, caso aceite, i
+**Pós-condições:** O professor que possui o equipamento é notificado para, caso aceite, iniciar o CDU "Transferir Equipamento".
